@@ -7,7 +7,7 @@ Tablet: 770px - 1024px
 Descktop: 1025px - 1200px 
 extra large screens, Tv: 1201px, and more
 */
-@media screen and (min-width: 770px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
@@ -16,13 +16,12 @@ extra large screens, Tv: 1201px, and more
     }
     section#login > div#imagem {
         float: left;
-        width: 30vw;
-        height: 100vh;
+        width: 30%;
+        height: 100%;
     }
     section#login > div#formulario {
         float: right;
-        width: 70vw;
-
+        width: 70%;
     }
 }
 @media  screen and (min-width:1025px) {
@@ -30,15 +29,21 @@ extra large screens, Tv: 1201px, and more
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
     section#login {
-        width: 1000px;
+        width: 990px;
     }
     section#login > div#imagem {
-        float: left;
-        width: 50vw;
-        height: 100vh;
+        float: right;
+        width: 50%;
+        height: 100%;
     }
     section#login > div#formulario {
-        float: right;
-        width: 50vw;
+        float: left;
+        width: 50%;
     } 
+    div#formulario > h1 {
+        font-size: 2em;
+    }
+    div#formulario > p {
+        font-size: 1.2em;
+    }
 }
